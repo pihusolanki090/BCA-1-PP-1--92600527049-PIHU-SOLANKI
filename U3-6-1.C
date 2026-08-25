@@ -10,13 +10,26 @@ void main()
 
   printf("\n Enter basic salary :");
   scanf("%f",&s);
+ 
+  printf("\n Enter hra:");
+  scanf("%f",&h);
+  
+  printf("\n Enter ta:);
+  scanf("%f",&t);
+
+  printf("\n Enter da:);
+  scanf("%f",&d);
+
+  printf("\n Enter pf:);
+  scanf("%f",&p);
+
 
   if(s >= 5000)
   {
-	hr= (s *0.05);
-	ta=(s * 0.06);
-	da=(s * 0.04);
-	pf=(s * 0.05);
+	hr= (s * h);
+	ta=(s * t);
+	da=(s * d);
+	pf=(s * p);
 
 
   }
@@ -33,10 +46,10 @@ void main()
 
   gs= s + hr + ta + da -pf;
   printf("\n gross salary is :%.2f",gs);
-  printf("\n Hr Rs =%.2f",hr);
-  printf("\n Ta Rs =%.2f",ta);
-  printf("\n Da Rs =%.2f",da);
-  printf("\n Pf Rs =%.2f",pf);
+  printf("\n Hr Rs =%.2f",h);
+  printf("\n Ta Rs =%.2f",t);
+  printf("\n Da Rs =%.2f",d);
+  printf("\n Pf Rs =%.2f",p);
 
 
 
