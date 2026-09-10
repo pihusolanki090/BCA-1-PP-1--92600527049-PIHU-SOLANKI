@@ -1,4 +1,4 @@
-//wap to display that any number is odd or even
+//wap tp display number is odd or even
 #include<stdio.h>
 #include<conio.h>
 
@@ -6,16 +6,24 @@ void main()
 {
 	int x,y;
 	clrscr();
-	printf("\n enter any number: ");
+
+	printf("\n Enter any number :");
 	scanf("%d",&x);
-	y=x % 2;
-	if(y==0)
+
+	x=x % 2;
+
+	if(x % 2==0)
 	{
-		printf("\n number is odd");
+		printf(" \n This number even");
+
 	}
 	else
 	{
-		printf("\n number is even");
+		printf("\n This number is odd");
+
 	}
+
 	getch();
+
+
 }
