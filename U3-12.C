@@ -10,14 +10,31 @@ void main()
 	printf("\n Enter any character:");
 	scanf("%c",&ch);
 
-	if(ch >='A'&& ch <= 'Z')
+	if(ch >='A'&& ch <='Z')
 	{
 		printf("\n %c is uppercase",ch);
 	}
 	else
 	{
+		if(ch >='a'&& ch <='z')
+		{
+			printf("\n %c is lowercase ",ch);
+		}
+		else
+		{
+		       //	printf("\n This is invalid character");
 
-		printf("\n %c is lowercase ",ch);
+			if(ch >= '0' && ch <= '9')
+			{
+				printf("\n this is digit",ch);
+			}
+			else
+			{
+				printf("\n This is special character",ch);
+			}
+
+		}
+
 	}
 
 	getch();
