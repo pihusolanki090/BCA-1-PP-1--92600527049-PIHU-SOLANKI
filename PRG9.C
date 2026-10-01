@@ -1,16 +1,22 @@
-// wap that explain conditional operator without max variable
+//define i/o statement:formating statement
 #include<stdio.h>
 #include<conio.h>
 
 void main()
 {
-	int x,y,max;
+	int x=15;
 	clrscr();
+	printf("\n%-5d",x);
+	printf("\n%5d",x);
+	printf("\n%+5d",x);
+	printf("\n%05d",x);
 
-	printf("\n Enter any two number :");
-	scanf("%d%d",&x,&y);
+	printf("\n%-10d",x);
+	printf("\n%10d",x);
+	printf("\n%+10d",x);
+	printf("\n%010d",x);
 
-	(x > y) ? printf("\n x is max "):printf("\n y is max");
+
 
 	getch();
 
