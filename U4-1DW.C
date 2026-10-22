@@ -1,0 +1,17 @@
+//wap that print1 to 10 by using do while.
+#include<stdio.h>
+#include<conio.h>
+
+void main ()
+{
+	int i=1;
+	clrscr();
+
+	do
+	{
+		printf("\n %d",i );
+		i++;
+	}while(i<=10);
+
+	 getch();
+}
